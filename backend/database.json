@@ -1,0 +1,235 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Kauã Alves",
+      "login": "dev",
+      "senha": "123",
+      "cargo": "developer",
+      "status": "ativo",
+      "ultimo_acesso": "2026-01-09T16:37:51.561Z"
+    },
+    {
+      "id": "2",
+      "nome": "Pedro Gomes",
+      "login": "pedro.papamike",
+      "senha": "123",
+      "cargo": "mantenedor",
+      "status": "ativo"
+    },
+    {
+      "id": "3",
+      "nome": "Marcos",
+      "login": "marcos.papamike",
+      "senha": "123",
+      "cargo": "mantenedor",
+      "status": "ativo"
+    },
+    {
+      "id": "4",
+      "nome": "Nicoly",
+      "login": "nicoly.papamike",
+      "senha": "123",
+      "cargo": "secretaria",
+      "status": "ativo",
+      "ultimo_acesso": "2026-01-09T16:37:28.719Z"
+    },
+    {
+      "id": "5",
+      "nome": "Thiely",
+      "login": "thiely.papamike",
+      "senha": "123",
+      "cargo": "secretaria",
+      "status": "ativo"
+    },
+    {
+      "id": "6",
+      "nome": "Thaís",
+      "login": "thais.papamike",
+      "senha": "123",
+      "cargo": "financeiro",
+      "status": "ativo"
+    },
+    {
+      "id": "7",
+      "nome": "Sheila",
+      "login": "sheila.papamike",
+      "senha": "123",
+      "cargo": "coordenacao",
+      "status": "ativo"
+    }
+  ],
+  "leads": [
+    {
+      "id": "1767975424103",
+      "aluno": "Dudaaaa",
+      "data_nascimento": "",
+      "ano": "1º Médio",
+      "escola_atual": "",
+      "responsavel": "Kaua Alves SIlva",
+      "parentesco": "",
+      "telefone": "11976965693",
+      "email": "kauak4006@gmail.com",
+      "bairro": "Osasco",
+      "outros_responsaveis": [],
+      "origem": "Google",
+      "indicacao_aluno": "",
+      "indicacao_turma": "",
+      "motivo_troca": "Segurança",
+      "o_que_valoriza": "Seguranca",
+      "motivo_saida": "Indisciplina",
+      "anotacao_comercial": "Na verdade querem mais proximidade.",
+      "valor_matricula": "",
+      "valor_mensalidade": "",
+      "valor_material": "",
+      "valor_integral": "",
+      "valor_final": "",
+      "obs": "",
+      "status": "matriculado",
+      "alunos": [
+        {
+          "nome": "Dudaaaa",
+          "nasc": "2005-05-12",
+          "escola_anterior": "FITO",
+          "serie": "1º Médio"
+        }
+      ],
+      "responsaveis": [
+        {
+          "nome": "Kaua Alves SIlva",
+          "parentesco": "Pai",
+          "telefone": "11976965693",
+          "email": "kauak4006@gmail.com"
+        }
+      ],
+      "endereco": {
+        "cep": "0832323",
+        "rua": "Rua Cravinas",
+        "numero": "15",
+        "bairro": "Osasco",
+        "cidade": "Osasco"
+      },
+      "date": "2026-01-09T16:17:04.164Z",
+      "perfil_completo": {
+        "alunos": [
+          {
+            "nome": "Dudaaaa",
+            "nasc": "2005-05-12",
+            "escola_anterior": "FITO",
+            "serie": "1º Médio"
+          }
+        ],
+        "responsaveis": [
+          {
+            "nome": "Kaua Alves SIlva",
+            "parentesco": "Pai",
+            "telefone": "11976965693",
+            "email": "kauak4006@gmail.com"
+          }
+        ],
+        "endereco": {
+          "cep": "0832323",
+          "rua": "Rua Cravinas",
+          "numero": "15",
+          "bairro": "Osasco",
+          "cidade": "Osasco"
+        },
+        "motivos": [
+          "Segurança"
+        ],
+        "valores": [
+          "Seguranca"
+        ],
+        "marketing": {
+          "canal": "Google",
+          "detalhe": ""
+        },
+        "notas": "Na verdade querem mais proximidade."
+      },
+      "proposta_comercial": {
+        "matricula": "1.000,00",
+        "mensalidade": "300,00",
+        "material": "250,00",
+        "integral": "",
+        "turno": "Manhã",
+        "obs": "",
+        "valor_final": "300,00"
+      },
+      "visitDate": "2026-01-09",
+      "visitTime": "14:00",
+      "pedagogical_status": "interview_done",
+      "last_interaction": "2026-01-09T16:17:27.383Z",
+      "valor": 300,
+      "matriculaDate": "2026-01-09T16:28:54.124Z",
+      "data_matricula": "2026-01-09T16:36:53.833Z",
+      "avaliacao_atendimento": 5
+    }
+  ],
+  "financeiro": [
+    {
+      "id": "1767976134127-auto",
+      "leadId": "1767975424103",
+      "descricao": "Matrícula: Dudaaaa",
+      "categoria": "Matrícula",
+      "tipo": "entrada",
+      "valor": 350,
+      "data": "2026-01-09T16:28:54.127Z",
+      "status": "pendente"
+    }
+  ],
+  "atendimentos": [],
+  "eventos": [],
+  "metas": {
+    "leads": 150,
+    "matriculas": 20,
+    "visitas": 30,
+    "receita": 50
+  },
+  "tarefas": [
+    {
+      "id": "1767975440086",
+      "titulo": "Visita: Duda",
+      "data": "2026-01-10",
+      "hora": "10:00",
+      "observacao": "Responsável: Kaua Alves SIlva. Tel: 11976965693",
+      "status": "pendente",
+      "tipo": "visita"
+    },
+    {
+      "id": "1767975499587",
+      "titulo": "Visita: Duda",
+      "data": "2026-01-12",
+      "hora": "10:00",
+      "observacao": "Responsável: Kaua Alves SIlva. Tel: 11976965693",
+      "status": "pendente",
+      "tipo": "visita"
+    },
+    {
+      "id": "1767976491990",
+      "titulo": "Visita: Dudaaaa",
+      "data": "2026-01-09",
+      "hora": "14:00",
+      "observacao": "Responsável: Kaua Alves SIlva. Tel: 11976965693",
+      "status": "pendente",
+      "tipo": "visita"
+    }
+  ],
+  "turmas": [],
+  "cursos": [],
+  "contratos": [],
+  "notificacoes": [],
+  "arquivos": [],
+  "logs": [],
+  "pedagogico": [
+    {
+      "id": "1767975447372",
+      "leadId": "1767975424103",
+      "aluno": "Duda",
+      "turma": "1º Médio",
+      "responsavel": "Kaua Alves SIlva",
+      "status": "aguardando",
+      "data_entrada": "2026-01-09T16:17:27.372Z",
+      "prioridade": "normal"
+    }
+  ]
+}

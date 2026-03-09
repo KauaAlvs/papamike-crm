@@ -1,0 +1,55 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Reset Global para tirar margens e barras de rolagem extras */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Isso impede que o padding aumente o tamanho dos elementos */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* Trava a rolagem da página inteira (vamos rolar só o conteúdo) */
+  background-color: #f8fafc;
+}
+
+/* Scrollbar bonita e fina (estilo Mac/Mobile) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animação de Spin para loadings */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}

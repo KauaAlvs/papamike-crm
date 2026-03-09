@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  # 1. BANCO DE DADOS
+  postgres:
+    image: postgres:15
+    container_name: papamike_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: papamike_prod
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  # 2. BACKEND
+  backend:
+    build: ./backend
+    container_name: papamike_backend
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=postgres
+      - DB_USER=postgres
+      - DB_PASS=admin
+      - DB_NAME=papamike_prod
+    depends_on:
+      - postgres
+
+  # 3. FRONTEND (A mudança está aqui no build)
+  frontend:
+    build: .
+    container_name: papamike_frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  # 4. EVOLUTION API (WhatsApp)
+  evolution_api:
+    image: atendai/evolution-api:v2.1.1
+    container_name: papamike_whatsapp
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - SERVER_URL=http://localhost:8080
+      - DOCKER_ENV=true
+      - AUTHENTICATION_API_KEY=B89898989898
+    volumes:
+      - evolution_instances:/evolution/instances
+
+volumes:
+  pgdata:
+  evolution_instances:
