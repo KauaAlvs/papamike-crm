@@ -46,5 +46,5 @@ Todo o ecossistema (Frontend, Backend e Banco de Dados) é orquestrado via **Doc
 
 ### 1. Clone o repositório
 ```bash
-git clone [https://github.com/KauaAlvs/crm-papa-mike.git](https://github.com/KauaAlvs/papamike-crm)
+git clone [https://github.com/KauaAlvs/crm-papa-mike.git](https://github.com/KauaAlvs/papamike-crm.git)
 cd crm-papa-mike
