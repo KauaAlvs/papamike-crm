@@ -6,7 +6,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Orchestration-2496ED?style=for-the-badge&logo=docker)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-Design-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-O **Papa Mike CRM** não é apenas uma ferramenta de cadastro; [cite_start]é o motor comercial do Colégio e Faculdade Papa Mike[cite: 1, 23]. [cite_start]Construído para ser o ponto de convergência entre os setores Comercial e de Coordenação Pedagógica, ele elimina gargalos de comunicação e garante que o Pipeline de Vendas seja gerido com precisão cirúrgica[cite: 24].
+O **Papa Mike CRM** é uma plataforma personalizada desenvolvida para otimizar o Pipeline de Vendas e a integração entre os setores Comercial e de Coordenação Pedagógica da Escola Papa Mike. Ele centraliza a operação, garantindo que nenhum aluno em potencial seja perdido por falhas de processo ou atrasos na comunicação.
 
 Desenvolvido para substituir processos manuais, automatizar cálculos financeiros complexos e oferecer uma experiência de fechamento de matrícula (UX) inovadora e focada em dispositivos móveis.
 
@@ -15,19 +15,19 @@ Desenvolvido para substituir processos manuais, automatizar cálculos financeiro
 ## 🚀 Principais Funcionalidades (O Cérebro do Sistema)
 
 ### 1. 🔄 Pipeline Inteligente e Triagem Pedagógica
-[cite_start]O sistema organiza o funil de vendas em colunas dinâmicas: **Novos Leads, Visita Agendada, Em Negociação, Fechados e Matriculados**[cite: 26]. [cite_start]Possui um fluxo exclusivo de **Check-in Pedagógico**, onde leads manuais são encaminhados para uma fila de espera da coordenação, garantindo que o perfil pedagógico seja avaliado antes da liberação comercial[cite: 31, 48].
+O sistema organiza o funil de vendas em colunas dinâmicas: **Novos Leads, Visita Agendada, Em Negociação, Fechados e Matriculados**. Possui um fluxo exclusivo de **Check-in Pedagógico**, onde leads podem ser encaminhados para uma fila de espera da coordenação para avaliação antes da liberação comercial.
 
 ### 2. 📱 Modo Apresentação 180º (Blackout UX)
-Desenvolvido sob a filosofia *Mobile-First*, o sistema utiliza unidades de viewport dinâmicas (`100dvh`) para assegurar estabilidade visual absoluta em tablets. Possui uma funcionalidade de **rotação de software em 180 graus**: com um clique, a proposta comercial entra em modo de alto contraste e inverte a orientação, permitindo que o consultor apresente os valores ao responsável sem precisar girar o dispositivo fisicamente.
+Desenvolvido sob a filosofia *Mobile-First*, o sistema utiliza unidades de viewport dinâmicas (`100dvh`) para assegurar estabilidade visual absoluta em tablets. Possui uma funcionalidade de **rotação de software em 180 graus**: com um toque, a proposta comercial entra em modo de alto contraste e inverte a orientação, permitindo que o consultor apresente os valores ao responsável sem precisar girar o dispositivo fisicamente.
 
 ### 3. 💰 Motor Financeiro e Blindagem de Descontos
-[cite_start]O sistema automatiza o preenchimento dos valores de material didático conforme o segmento (Fundamental I, II ou Médio)[cite: 54]. [cite_start]Implementa uma **trava lógica rigorosa** onde os descontos percentuais incidem **exclusivamente sobre a mensalidade**, preservando os valores integrais de matrícula e material didático, eliminando erros operacionais no fechamento de contratos[cite: 52, 53].
+O sistema implementa uma **trava lógica rigorosa** onde os descontos percentuais incidem **exclusivamente sobre a mensalidade**. Isso preserva os valores integrais de matrícula e material didático, eliminando erros operacionais e garantindo a saúde financeira da instituição.
 
 ### 4. 🤖 Automação Proativa via Evolution API (WhatsApp)
-A comunicação não é passiva. [cite_start]Através da integração com a **Evolution API**, o CRM monitora a agenda corporativa e o status dos leads para disparar notificações instantâneas e lembretes de visitas via WhatsApp[cite: 68]. [cite_start]O sistema inclui indicadores visuais de urgência que mudam a cor dos cards conforme o tempo de inatividade[cite: 28].
+Através da integração com a **Evolution API**, o CRM monitora a agenda e o status dos leads para disparar notificações e lembretes de visitas automáticos via WhatsApp. O sistema também inclui indicadores visuais de urgência que mudam a cor das bordas dos cards conforme o tempo de inatividade.
 
 ### 5. 🐳 Infraestrutura Resiliente em Docker
-Todo o ecossistema (Frontend, Backend e Banco de Dados) é orquestrado via **Docker e Docker Compose**. Isso garante que a aplicação seja totalmente portável entre servidores VPS Linux, facilitando deploys rápidos, isolamento de dependências e escalabilidade do banco de dados PostgreSQL.
+Todo o ecossistema (Frontend, Backend e Banco de Dados) é orquestrado via **Docker e Docker Compose**. Isso garante que a aplicação seja totalmente portável entre servidores VPS Linux, facilitando deploys rápidos e isolamento de dependências.
 
 ---
 
@@ -38,7 +38,7 @@ Todo o ecossistema (Frontend, Backend e Banco de Dados) é orquestrado via **Doc
 - **Database:** PostgreSQL
 - **Integração:** Evolution API (WhatsApp)
 - **Infraestrutura:** Docker & Docker Compose
-- **Hospedagem:** VPS Linux (Hostinger)
+- **Hospedagem:** VPS Linux (HostGator/Hostinger)
 
 ---
 
@@ -47,4 +47,30 @@ Todo o ecossistema (Frontend, Backend e Banco de Dados) é orquestrado via **Doc
 ### 1. Clone o repositório
 ```bash
 git clone [https://github.com/KauaAlvs/papamike-crm.git](https://github.com/KauaAlvs/papamike-crm.git)
-cd crm-papa-mike
+cd papamike-crm
+```
+
+### 2. Configure as Variáveis de Ambiente
+```bash
+Crie um arquivo .env na raiz do backend e do frontend seguindo o modelo:
+
+Snippet de código
+PORT=3000
+DATABASE_URL="postgresql://usuario:senha@db:5432/papamike"
+EVOLUTION_API_URL="http://evolution_api:8080"
+EVOLUTION_API_KEY="sua_chave_secreta"
+```
+
+### 3. Suba o ambiente com Docker
+```bash
+docker compose up -d --build
+```
+
+### 4. Acesso ao Sistema
+```bash
+Frontend: http://localhost:5173
+
+Backend API: http://localhost:3000
+```
+
+### Desenvolvido com foco em alta performance e experiência do usuário educacional.
